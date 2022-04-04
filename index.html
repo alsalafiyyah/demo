@@ -67,6 +67,7 @@ ion-icon {
 </ul>
 
 <div class="container mt-70 brown darken-4 top-rd">
+<div class="example"></div>
 <nav class="transparent mt-70"> 
 <div class="nav-wrapper"> 
 <form> 
@@ -88,6 +89,7 @@ ion-icon {
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="/demo/assets/jquery.hijri.date.min.js"></script>
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function() { 
 var elems = document.querySelectorAll('.sidenav');  var instances = M.Sidenav.init(elems, options);
@@ -96,6 +98,12 @@ var elems = document.querySelectorAll('.sidenav');  var instances = M.Sidenav.i
 $(document).ready(function(){ 
 $('.sidenav').sidenav(); 
 });
+
+$(function(){
+  $('.example').hijriDate();
+});
+// => الثلاثاء 11 رجب 1442 هـ
+
 </script>
 </body> 
 </html>
